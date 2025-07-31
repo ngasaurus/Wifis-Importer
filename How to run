@@ -1,0 +1,31 @@
+--
+
+How to run:
+
+Save as ghostssid.py (or whatever you want)
+
+Run as root:
+
+
+sudo python3 ghostssid.py
+
+
+---
+
+Notes:
+
+Replace "wlan0" and "wlan0mon" with your actual Wi-Fi interface names if different
+
+Replace "at0" in dnsmasq config if your interface is named otherwise
+
+You’ll see the MAN banner on terminal at start
+
+The GUI downloads and uses the fsociety mask image as faint background
+
+Start and stop attack buttons control everything — fake APs, DHCP/DNS, and Flask phishing server
+
+
+
+---
+
+Need anything else? I got you!
