@@ -1,0 +1,46 @@
+How to Change the Fake Wi-Fi Names (SSIDs):
+
+Your tool broadcasts fake Wi-Fi names from a hardcoded list in the script and optionally from a config text file.
+
+To change them, do the following:
+
+1. Open the Python script file `ssid_broadcaster.py`.
+
+2. Find the function called `start_airbase(self)`.
+
+3. Inside this function, you’ll see a line like:
+
+   ssids = ["Iphone12", "...", "nemoze da se konektiras", "smrdam"]
+
+4. Replace this list with your desired fake Wi-Fi names, for example:
+
+   ssids = ["Starbucks_FREE", "NSA_SURVEILLANCE_VAN", "Free_WiFi", "HackMeIfYouCan"]
+
+5. Save the script.
+
+6. (Optional) You can also change the list of fake Wi-Fi names in the config text file:
+
+   - Open or create the file `config/ssid_list.txt`
+
+   - Add one fake Wi-Fi name per line, for example:
+
+     Starbucks_FREE  
+     Android_Hotspot  
+     PoliceSurveillanceVan  
+     nemoze da se konektiras
+
+7. If you want the script to load SSIDs from the config file instead of the hardcoded list, you need to modify the script to read from it (not currently automatic).
+
+8. Run the script again, and it will broadcast the fake Wi-Fi names as defined.
+
+---
+
+Summary:
+
+- To quickly change fake Wi-Fi names, edit the list in the script (`start_airbase` function).
+
+- To maintain a separate list, edit the `config/ssid_list.txt` file (requires script modification to load).
+
+---
+
+Let me know if you want me to update the script to automatically load SSIDs from the config file.
